@@ -1,0 +1,58 @@
+{
+  "task": "sales_price_prediction_delta",
+  "baseline_feature": "LATEST_PRICE",
+  "delta_feature_columns": [
+    "DAYS_ON_MARKET",
+    "ZIPCODE",
+    "listing_month",
+    "is_weekend_list",
+    "month_cos",
+    "zip_median_dom",
+    "log_latest_price",
+    "LISTING_TYPE_New Construction",
+    "LISTING_TYPE_Short Sale",
+    "CITY_Austin",
+    "CITY_Charlotte",
+    "CITY_Chicago",
+    "CITY_Denver",
+    "CITY_Houston",
+    "CITY_Phoenix",
+    "STATE_GA",
+    "STATE_TX"
+  ],
+  "preprocessing": {
+    "num_imputer": "SimpleImputer(median)",
+    "binary_passthrough": true,
+    "num_to_impute": [
+      "DAYS_ON_MARKET",
+      "ZIPCODE",
+      "listing_month",
+      "month_cos",
+      "zip_median_dom",
+      "log_latest_price"
+    ],
+    "binary_like": [
+      "is_weekend_list"
+    ]
+  },
+  "model": {
+    "type": "RandomForestRegressor",
+    "params": {
+      "n_estimators": 800,
+      "max_depth": null,
+      "min_samples_split": 2,
+      "min_samples_leaf": 1,
+      "random_state": 42,
+      "n_jobs": -1
+    }
+  },
+  "metrics_holdout": {
+    "rmse": 42030.510300745846,
+    "mae": 16505.674514127168,
+    "r2": 0.9981423887577128
+  },
+  "created_with": {
+    "sklearn_version": "1.8.0",
+    "joblib_version": "1.4.2"
+  }
+}
