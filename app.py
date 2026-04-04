@@ -5,9 +5,6 @@ import pandas as pd
 from inference_sales_delta import predict_sales_price_delta
 
 from inference_rentals import predict_rental_demand
-
- 
-
 st.set_page_config(
 
     page_title="Sales & Rentals Prediction Suite",
@@ -15,21 +12,11 @@ st.set_page_config(
     layout="wide",
 
 )
-
- 
-
 st.title("🏡 Prediction Suite: Sales Price & Rental Demand")
 
 st.markdown("A unified ML interface powered by Random Forest models (Δ-model for Sales, RF-Classifier for Rentals).")
 
- 
-
 tabs = st.tabs(["📈 Sales Price Prediction", "🏠 Rental Demand Prediction"])
-
- 
-
- 
-
 # -------------------------------------------------------------------
 
 # 📈 TAB 1 — SALES PRICE PREDICTION (Δ‑MODEL)
