@@ -78,7 +78,7 @@ elif page == "📈 Sales Price Prediction":
                 "approx_distance_to_center": approx_distance_to_center
             }])
             result = predict_sales_price_delta(df)
-            st.success(f"✅ **Predicted Sale Price:** ${result.iloc,.0f}")
+            st.success(f"✅ **Predicted Sale Price:** ${result.iloc[0]:,.0f}")
  
     with col2:
         st.info("Fill in details and click **Predict Sale Price**.")
