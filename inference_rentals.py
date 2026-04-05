@@ -4,7 +4,6 @@ import pandas as pd
 
 from inference_sales_delta import predict_sales_price_delta
 
-from inference_rentals import predict_rental_demand
 st.set_page_config(
 
     page_title="Sales & Rentals Prediction Suite",
