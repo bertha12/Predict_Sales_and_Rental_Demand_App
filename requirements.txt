@@ -1,26 +1,45 @@
-# Core ML stack
-scikit-learn==1.8.0
-joblib==1.3.2
-numpy==1.26.4
-pandas==2.1.4
-scipy==1.15.3
-# Compression dependency needed to load your .joblib models
-lz4==4.3.3
-# Visualization libraries
-matplotlib==3.8.2
-shap==0.44.1
-# Streamlit UI
 streamlit==1.56.0
-# Other dependencies used in your app
-altair==5.5.0
-pyarrow==23.0.1
-pillow==10.4.0
-protobuf==4.25.9
-python-dateutil==2.9.0.post0
-tzdata==2026.1
-typing-extensions==4.15.0
-tqdm==4.67.3
-rich==13.9.4
-requests==2.33.1
+
+pandas==2.1.4
+
+numpy==1.26.4
+
+scikit-learn==1.3.2
+
+joblib==1.3.2
+
 openpyxl==3.1.2
+
+ 
+
+# Model compression support
+
+lz4==4.3.3
+
+ 
+
+# Visualization
+
+shap==0.44.1
+
+matplotlib==3.8.2
+
+ 
+
+# Misc
+
+pyarrow==23.0.1
+
+pillow==10.4.0
+
+protobuf==4.25.9
+
+python-dateutil==2.9.0.post0
+
+tqdm==4.67.3
+
+typing-extensions==4.15.0
+
+requests==2.33.1
+
 pydeck==0.9.1
